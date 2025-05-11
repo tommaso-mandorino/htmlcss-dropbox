@@ -32,13 +32,51 @@ body {
     }
 
     /* Utility */
+    .container {
+        margin: 0 auto;
+        padding: 0 1rem;
+        max-width: 1200px;
+    }
+
+    .panels-section {
+        display: flex;
+        .panel-text {
+            width: 30%;
+            font-size: 1.2rem;
+        }
+        .panel-image {
+            width: 70%;
+        }
+    }
+
     .link-button {
+        text-decoration-line: none;
         padding: 0.5rem 1rem;
         background-color: var(--bg-primary);
         color: white;
         .link-button--alternative {
 
         }
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    .my-2 {
+        margin: 2rem 0;
+    }
+
+    .mt-4 {
+        margin-top: 4rem;
+    }
+
+    .w-fit-content {
+        width: fit-content;
+    }
+
+    .text-big {
+        font-size: 3rem;
     }
 
     /* Globals */
@@ -49,7 +87,6 @@ body {
 
     /* #region Header */
     header {
-
         /* Menu */
         .menu {
             display: flex;
@@ -59,11 +96,11 @@ body {
             ul {
                 display: flex;
                 align-items: center;
-                column-gap: 1.5rem;
+                column-gap: 2rem;
                 li {
                     a {
                         text-decoration-line: none;
-                        font-size: 1.25rem;
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -71,7 +108,12 @@ body {
 
         /* Hero */
         .hero {
+            height: 740px;
             background-color: var(--bg-primary-lighter);
+            h1 {
+                padding: 5rem 0 3rem;
+                font-size: 6rem;
+            }
         }
 
     }
