@@ -65,19 +65,14 @@ body {
     }
     /* #endregion Display */
 
-    /* Position */
-
-    /* Sticky position */
-    .position-sticky {
-        position: sticky;
-    }
-
-    /* Top 0 */
-    .top-0 {
-        top: 0;
-    }
-
     /* #region Margin */
+
+    /* Everywhere margin */
+
+    /* Margin 1.5rem */
+    .m-1-5 {
+        margin: 1.5rem;
+    }
 
     /* Vertical margin */
 
@@ -95,9 +90,24 @@ body {
         margin-right: auto;
     }
 
+    /* Negative margin */
+
+    /* Negative horizontal margin -1.5rem */
+    .mx-n1-5 {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+
     /* Top margin */
-    .mt-4 {
-        margin-top: 4rem;
+
+    /* Top margin 2rem */
+    .mt-2 {
+        margin-top: 2rem;
+    }
+
+    /* Top margin 2-5rem */
+    .mt-2-5 {
+        margin-top: 2.5rem;
     }
     /* #endregion Margin */
 
@@ -122,17 +132,42 @@ body {
         padding: 1rem;
     }
 
+    /* Padding 1.5rem */
+    .p-1-5 {
+        padding: 1.5rem;
+    }
+
     /* Padding 2rem */
     .p-2 {
         padding: 2rem;
     }
 
+    /* Horizontal padding */
+
+    /* Horizontal padding 2rem */
+    .px-2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     /* #region Vertical padding */
+
+    /* Vertical padding 0.25rem */
+    .py-0-25 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
 
     /* Vertical padding 0.5rem */
     .py-0-5 {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+    }
+
+    /* Vertical padding 0.75rem */
+    .py-0-75 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
     }
 
     /* Vertical padding 1rem */
@@ -168,12 +203,27 @@ body {
 
     /* Top padding */
 
-    /* Top padding 5rem */
-    .pt-5 {
-        padding-top: 5rem;
+    /* Top padding 2rem */
+    .pt-2 {
+        padding-top: 2rem;
+    }
+
+    /* Top padding 3rem */
+    .pt-3 {
+        padding-top: 3rem;
+    }
+
+    /* Top padding 10rem */
+    .pt-10 {
+        padding-top: 10rem;
     }
 
     /* #region Bottom padding */
+
+    /* Bottom padding 1rem */
+    .pb-1 {
+        padding-bottom: 1rem;
+    }
 
     /* Bottom padding 2rem */
     .pb-2 {
@@ -184,12 +234,24 @@ body {
     .pb-3 {
         padding-bottom: 3rem;
     }
+
+    /* Bottom padding 4rem */
+    .pb-4 {
+        padding-bottom: 4rem;
+    }
     
     /* Bottom padding 7.5rem */
     .pb-7-5 {
         padding-bottom: 7.5rem;
     }
     /* #endregion Bottom padding */
+
+    /* Right padding */
+
+    /* Right padding 2rem */
+    .pr-2 {
+        padding-right: 2rem;
+    }
 
     /* #endregion Padding */
 
@@ -214,14 +276,24 @@ body {
 
     /* Height */
 
-    /* Height 740px */
-    .h-740 {
-        height: 740px;
+    /* Height 800px */
+    .h-800 {
+        height: 800px;
     }
 
      /* #endregion Sizes */
 
     /* Columns */
+
+    /* Column width 2/12 */
+    .col-2 {
+        width: calc(100% / 12 * 2);
+    }
+
+    /* Column width 3/12 */
+    .col-3 {
+        width: calc(100% / 12 * 3);
+    }
 
     /* Column width 4/12 */
     .col-4 {
@@ -231,6 +303,16 @@ body {
     /* Column width 8/12 */
     .col-8 {
         width: calc(100% / 12 * 8);
+    }
+
+    /* Column width 9/12 */
+    .col-9 {
+        width: calc(100% / 12 * 9);
+    }
+
+    /* Column width 10/12 */
+    .col-10 {
+        width: calc(100% / 12 * 10);
     }
 
     /* Column width 12/12 */
@@ -346,11 +428,14 @@ body {
 
     /* Split menu */
     .menu-split {
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
         display: flex;
         justify-content: space-between;
+        width: 100%;
         padding: 0 1rem;
+        border-bottom: 1px solid var(--color-borders);
         background-color: white;
         ul {
             display: flex;
@@ -368,6 +453,7 @@ body {
                     }
                     &.link-logo {
                         display: block;
+                        width: 10rem;
                     }
                     &.link-button {
                         padding: 0.5rem 1rem;
