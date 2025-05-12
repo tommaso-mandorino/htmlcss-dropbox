@@ -199,9 +199,20 @@ body {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
+
+    /* Vertical padding 10rem */
+    .py-10 {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
     /* #endregion Vertical padding */
 
     /* Top padding */
+
+    /* Top padding 1rem */
+    .pt-1 {
+        padding-top: 1rem;
+    }
 
     /* Top padding 2rem */
     .pt-2 {
