@@ -213,9 +213,19 @@ body {
         padding-top: 3rem;
     }
 
+    /* Top padding 4rem */
+    .pt-4 {
+        padding-top: 4rem;
+    }
+
     /* Top padding 10rem */
     .pt-10 {
         padding-top: 10rem;
+    }
+
+    /* Top padding 12rem */
+    .pt-12 {
+        padding-top: 12rem;
     }
 
     /* #region Bottom padding */
@@ -251,6 +261,11 @@ body {
     /* Right padding 2rem */
     .pr-2 {
         padding-right: 2rem;
+    }
+
+    /* Right padding 3rem */
+    .pr-3 {
+        padding-right: 3rem;
     }
 
     /* #endregion Padding */
@@ -414,12 +429,16 @@ body {
     /* Link button */
     .link-button {
         text-decoration-line: none;
+        display: block;
+        width: fit-content;
         padding: 0.75rem 1.25rem;
         background-color: var(--color-primary);
         text-align: center;
         color: white;
-        .link-button--alternative {
-
+        &.link-button--alternative {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
         }
         &:hover {
             filter: brightness(125%);
