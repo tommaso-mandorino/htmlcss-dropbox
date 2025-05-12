@@ -265,6 +265,11 @@ body {
     .pb-7-5 {
         padding-bottom: 7.5rem;
     }
+
+    /* Bottom padding 10rem */
+    .pb-10 {
+        padding-bottom: 10rem;
+    }
     /* #endregion Bottom padding */
 
     /* Right padding */
