@@ -23,44 +23,44 @@
     <!-- #region Website header -->
     <header class="website-header pb-7-5 border-bottom">
 
-        <!-- Menu -->
-        <nav class="menu-split position-sticky top-0 fs-1-2 bg-white">
+        <!-- Menu split-->
+        <nav class="menu-split">
 
             <!-- Menu left side-->
-            <ul class="d-flex align-items-center column-gap-2">
+            <ul class="menu-left">
                 <li>
-                    <a href="./" class="text-decoration-none">
-                        <!-- Dropbox logo -->
+                    <a class="link-logo" href="./">
                         <img src="./img/logo-small.png" alt="Dropbox logo">
                     </a>
                 </li>
                 <li>
-                    <a class="text-decoration-none" href="#">Perché Dropbox</a>
+                    <a href="#">Perché Dropbox</a>
                 </li>
                 <li>
-                    <a class="text-decoration-none" href="#">Funzioni</a>
+                    <a href="#">Funzioni</a>
                 </li>
                 <li>
-                    <a class="text-decoration-none" href="#">Piani e Prezzi</a>
+                    <a href="#">Piani e Prezzi</a>
                 </li>
             </ul>
 
             <!-- Menu right side -->
-            <ul class="d-flex align-items-center column-gap-2">
+            <ul class="menu-right">
                 <li>
-                    <a class="text-decoration-none" href="#">Supporto</a>
+                    <a href="#">Supporto</a>
                 </li>
                 <li>
-                    <a class="text-decoration-none" href="#">Contatta l'ufficio vendite</a>
+                    <a href="#">Contatta l'ufficio vendite</a>
                 </li>
                 <li>
-                    <a class="text-decoration-none" href="#">Accedi</a>
+                    <a href="#">Accedi</a>
                 </li>
 
                 <li>
-                    <a class="text-decoration-none link-button" href="#">Inizia</a>
+                    <a class="link-button" href="#">Inizia</a>
                 </li>
             </ul>
+
         </nav>
 
         <!-- Hero section -->
@@ -76,7 +76,7 @@
                 <div class="panels-section d-flex">
 
                     <!-- Text panel -->
-                    <div class="panel-text">
+                    <div class="panel-text col-4 fs-1-2">
 
                         <!-- Hero description -->
                         <p>
@@ -95,7 +95,7 @@
                         <span>Annulla in quasiasi momento</span>
 
                         <!-- Arrow down link -->
-                        <a class="arrow-down-anchor d-block mt-4 fs-3" href="#billing-frequency">
+                        <a class="arrow-down-anchor d-block mt-4 fs-3" href="#plan-comparison-cards">
                             <!-- Font Awesome arrow down -->
                             <i class="fa-sharp fa-solid fa-arrow-down"></i>
                         </a>
@@ -103,7 +103,7 @@
                     </div>
 
                     <!-- Image panel -->
-                    <div class="panel-image">
+                    <div class="panel-image col-8">
                         <!-- Hero image -->
                         <img src="./img/jumbo.png" alt="Dropbox Business preview">
                     </div>
@@ -130,7 +130,7 @@
                 <h2 class="py-4 fs-3">Trova il piano business che fa per te</h2>
 
                 <!-- Billing frequency -->
-                <div id="billing-frequency" class="billing-frequency d-flex column-gap-2">
+                <div class="billing-frequency d-flex column-gap-2">
 
                     <!-- Monthly -->
                     <span class="d-flex column-gap-0-3 align-items-center">
@@ -147,10 +147,10 @@
                 </div>
 
                 <!-- Plan comparison cards -->
-                <div class="card-container d-flex flex-wrap py-3">
+                <div id="plan-comparison-cards" class="plan-comparison-cards d-flex flex-wrap py-3">
 
                     <!-- Single plan card -->
-                    <section class="card col-4 border">
+                    <section class="plan-card col-4 border">
 
                         <!-- Card header -->
                         <header class="card-header text-center py-1 border-bottom">

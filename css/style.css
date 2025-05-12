@@ -228,6 +228,11 @@ body {
         width: calc(100% / 12 * 4);
     }
 
+    /* Column width 8/12 */
+    .col-8 {
+        width: calc(100% / 12 * 8);
+    }
+
     /* Column width 12/12 */
     .col-12 {
         width: 100%;
@@ -312,7 +317,7 @@ body {
         background-color: var(--color-primary-lighter);
     }
 
-    /* Reusable components */
+    /* #region reusable components */
 
     /* Container */
     .container {
@@ -321,33 +326,6 @@ body {
         max-width: 1200px;
         &.container--small{
             max-width: 1000px;
-        }
-    }
-
-    /* Split menu */
-    .menu-split {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        li:hover {
-            /* border-bottom: 3px solid black; */
-        }
-        li {
-            padding: 1.5rem 1rem;
-        }
-        .link-button {
-            padding: 0.5rem 1rem;
-        }
-    }
-
-    /* Panels section */
-    .panels-section {
-        .panel-text {
-            width: 30%;
-            font-size: 1.2rem;
-        }
-        .panel-image {
-            width: 70%;
         }
     }
 
@@ -366,6 +344,39 @@ body {
         }
     }
 
+    /* Split menu */
+    .menu-split {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        background-color: white;
+        ul {
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+            li {
+                a {
+                    text-decoration-line: none;
+                    padding: 1.5rem 1rem;
+                    font-size: 1.2rem;
+                    &:not(.link-logo):not(.link-button) {
+                        &:hover {
+                            border-bottom: 3px solid black;
+                        }
+                    }
+                    &.link-logo {
+                        display: block;
+                    }
+                    &.link-button {
+                        padding: 0.5rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+
     /* Radio button */
     .radio-button {
         border: 1px solid var(--color-borders);
@@ -377,6 +388,7 @@ body {
             padding: 0.35rem;
         }
     }
+    /* #endregion reusable components */
 
     /* Globals */
 
